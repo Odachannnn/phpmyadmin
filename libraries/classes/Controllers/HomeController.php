@@ -115,7 +115,7 @@ class HomeController extends AbstractController
                 $charsets = Charsets::getCharsets($this->dbi, $GLOBALS['cfg']['Server']['DisableIS']);
                 $collations = Charsets::getCollations($this->dbi, $GLOBALS['cfg']['Server']['DisableIS']);
                 $charsetsList = [];
-                foreach ($charsets as $charset) {
+                foreach ($charsets as $charset) {aaaa
                     $collationsList = [];
                     foreach ($collations[$charset->getName()] as $collation) {
                         $collationsList[] = [
